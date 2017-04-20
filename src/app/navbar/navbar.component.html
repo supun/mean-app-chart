@@ -1,0 +1,11 @@
+<md-sidenav-container class="app-inner">
+    <md-sidenav #nav mode="side" class="app-sidenav" [opened]="false">
+        <!--<md-nav-list>
+            <md-list-item >
+                <i class="material-icons">vpn_key</i><a (click)="nav.close()" [routerLink] ="['system-configuration']">Global Configuration</a>
+            </md-list-item>
+        </md-nav-list>-->
+    </md-sidenav>
+    <app-toolbar [nav]="nav"></app-toolbar>
+    <router-outlet></router-outlet>
+</md-sidenav-container>
